@@ -10,7 +10,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void setup() {
-        System.setProperty("webdriver.gecko.driver", "");
+        System.setProperty("webdriver.gecko.driver", String.valueOf(BaseTest.class.getClassLoader().getResource("geckodriver").getFile()));
 
         if(driver == null)
             driver = new FirefoxDriver();

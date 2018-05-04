@@ -55,7 +55,7 @@ public class Testes {
 
     @BeforeClass
     public static void beginTests() {
-        System.setProperty("webdriver.gecko.driver", "/ice/Downloads/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/home/souzajbr/Downloads/geckodriver-v0.20.1-linux64/geckodriver");
         driver = new FirefoxDriver();
     }
 
