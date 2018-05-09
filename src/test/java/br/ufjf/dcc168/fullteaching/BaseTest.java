@@ -11,7 +11,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void setup() {
-        System.setProperty("webdriver.gecko.driver", "/home/rodolpho/Downloads/geckodriver-v0.20.1-linux64/geckodriver");
+        System.setProperty("webdriver.gecko.driver", String.valueOf(BaseTest.class.getClassLoader().getResource("geckodriver").getFile()));
 
         if(driver == null)
             driver = new FirefoxDriver();
