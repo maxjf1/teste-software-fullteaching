@@ -1,10 +1,10 @@
-package br.ufjf.dcc168.fullteaching.Login;
+package br.ufjf.dcc168.fullteaching.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Login {
+public class LoginPage {
 
     private WebDriver driver;
 
@@ -21,11 +21,11 @@ public class Login {
     private WebElement login;
 
 
-    public Login(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public Login loginProfessor(String email, String password){
+    public LoginPage loginProfessor(String email, String password){
 
         loginButton.click();
 

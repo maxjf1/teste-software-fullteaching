@@ -1,4 +1,4 @@
-package br.ufjf.dcc168.fullteaching.Login;
+package br.ufjf.dcc168.fullteaching.login;
 
 import br.ufjf.dcc168.fullteaching.BaseTest;
 import org.junit.BeforeClass;
@@ -16,9 +16,9 @@ public class LoginTest extends BaseTest {
     @Test
     public void loginProfessor()
     {
-        Login login = PageFactory.initElements(driver, Login.class);
+        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 
-        login.loginProfessor("teacher@gmail.com","pass");
+        loginPage.loginProfessor("teacher@gmail.com","pass");
     }
 
 }
