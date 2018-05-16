@@ -20,4 +20,12 @@ public class BaseTest {
     public static void click(By identifier){
         driver.findElement(identifier).click();
     }
+
+    public static void sleep(long milliseconds) {
+        try{
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
